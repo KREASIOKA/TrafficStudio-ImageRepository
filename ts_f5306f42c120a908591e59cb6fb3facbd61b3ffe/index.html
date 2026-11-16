@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeri Foto — Budi Santoso · TRAFFICSTUDIO</title>
+<style>
+:root{--bg:#0b0e13;--surface:#141a24;--border:rgba(255,255,255,.09);--text:#f4f6f8;--text2:#9aa3b2;--primary:#ffb300}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:radial-gradient(ellipse at 50% -10%,rgba(255,179,0,.10),transparent 55%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,sans-serif;min-height:100vh;padding:24px 16px 60px}
+.wrap{max-width:1080px;margin:0 auto}
+header{text-align:center;margin-bottom:28px}
+header .logo{height:64px;margin-bottom:10px}
+header h1{font-size:1.6rem;font-weight:900;letter-spacing:-.02em}
+header h1 span{color:var(--primary)}
+header .sub{color:var(--text2);margin-top:6px;font-size:.95rem;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.thumb{position:relative;background:linear-gradient(135deg,#171b24,#1d2433);aspect-ratio:3/4;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb.noimg::after{content:'\u{1F4F7}';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.4rem;opacity:.35}
+.tbadge{position:absolute;top:10px;left:10px;background:rgba(0,0,0,.72);color:#fff;font-size:.68rem;font-weight:800;padding:4px 10px;border-radius:100px;letter-spacing:.05em;z-index:2}
+.tb-orig{background:rgba(34,197,94,.92);color:#04150a}
+.tb-comp{background:rgba(255,179,0,.92);color:#1a1200}
+.meta{padding:12px 14px}
+.label{font-weight:700;font-size:.9rem;margin-bottom:10px}
+.btns{display:flex;gap:8px}
+.btn{flex:1;text-align:center;padding:9px 10px;border-radius:100px;background:var(--primary);color:#000;font-weight:800;font-size:.8rem;text-decoration:none;transition:filter .2s}
+.btn:hover{filter:brightness(1.1)}
+.btn.ghost{background:transparent;border:1.5px solid var(--border);color:var(--text)}
+footer{margin-top:36px;text-align:center;color:var(--text2);font-size:.85rem}
+footer b{color:var(--primary)}
+@media(max-width:600px){.grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<header>
+		<svg class="logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="8" width="84" height="84" rx="20" fill="#161b23" stroke="#ffb300" stroke-width="3"/><circle cx="50" cy="28" r="9" fill="#ff3b30" opacity=".55"/><circle cx="50" cy="50" r="9" fill="#ffb300"/><circle cx="50" cy="72" r="9" fill="#22c55e" opacity=".55"/><circle cx="74" cy="74" r="12" fill="#ffb300"/><text x="74" y="79" text-anchor="middle" font-family="Arial" font-weight="900" font-size="13" fill="#0b0e13">TS</text></svg>
+		<h1>TRAFFIC<span>STUDIO</span> PHOTOBOOTH</h1>
+		<div class="sub">Galeri milik <b style="color:var(--text)">Budi Santoso</b> · Senin, 16 November 2026<br>1 sesi · 5 file</div>
+	</header>
+	<div class="grid">
+
+		<div class="card">
+			<div class="thumb original">
+				<span class="tbadge tb-orig">ASLI</span>
+				<img src="original/sesi1_foto1.jpg" alt="Foto Asli — Sesi 1.1" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('noimg')">
+			</div>
+			<div class="meta">
+				<div class="label">Foto Asli — Sesi 1.1</div>
+				<div class="btns">
+					<a href="original/sesi1_foto1.jpg" download="original/sesi1_foto1.jpg" class="btn">Download</a>
+					<a href="original/sesi1_foto1.jpg" target="_blank" rel="noopener" class="btn ghost">Buka</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="thumb original">
+				<span class="tbadge tb-orig">ASLI</span>
+				<img src="original/sesi1_foto2.jpg" alt="Foto Asli — Sesi 1.2" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('noimg')">
+			</div>
+			<div class="meta">
+				<div class="label">Foto Asli — Sesi 1.2</div>
+				<div class="btns">
+					<a href="original/sesi1_foto2.jpg" download="original/sesi1_foto2.jpg" class="btn">Download</a>
+					<a href="original/sesi1_foto2.jpg" target="_blank" rel="noopener" class="btn ghost">Buka</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="thumb original">
+				<span class="tbadge tb-orig">ASLI</span>
+				<img src="original/sesi1_foto3.jpg" alt="Foto Asli — Sesi 1.3" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('noimg')">
+			</div>
+			<div class="meta">
+				<div class="label">Foto Asli — Sesi 1.3</div>
+				<div class="btns">
+					<a href="original/sesi1_foto3.jpg" download="original/sesi1_foto3.jpg" class="btn">Download</a>
+					<a href="original/sesi1_foto3.jpg" target="_blank" rel="noopener" class="btn ghost">Buka</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="thumb composite">
+				<span class="tbadge tb-comp">TEMPLATE</span>
+				<img src="template/sesi1.jpg" alt="Hasil + Template — Sesi 1" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('noimg')">
+			</div>
+			<div class="meta">
+				<div class="label">Hasil + Template — Sesi 1</div>
+				<div class="btns">
+					<a href="template/sesi1.jpg" download="template/sesi1.jpg" class="btn">Download</a>
+					<a href="template/sesi1.jpg" target="_blank" rel="noopener" class="btn ghost">Buka</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="thumb gif">
+				<span class="tbadge tb-gif">GIF</span>
+				<img src="gif/sesi1.gif" alt="Boomerang GIF — Sesi 1" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('noimg')">
+			</div>
+			<div class="meta">
+				<div class="label">Boomerang GIF — Sesi 1</div>
+				<div class="btns">
+					<a href="gif/sesi1.gif" download="gif/sesi1.gif" class="btn">Download</a>
+					<a href="gif/sesi1.gif" target="_blank" rel="noopener" class="btn ghost">Buka</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>Terima kasih sudah berfoto di TRAFFICSTUDIO! Jangan lupa tag <b>@trafficstudio.id</b> 📸</footer>
+</div>
+</body>
+</html>
